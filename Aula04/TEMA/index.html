@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<style>
+    .bloco {
+        width: 200px;
+    }
+
+    .coluna {
+        height: 300px;
+    }
+    .letraVermelha{
+        color: red !important;
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+
+    <div class="d-flex flex-row p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco">
+            div 3
+        </div>
+
+    </div>
+    <br>
+    <div class="d-flex flex-row-reverse p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco">
+            div 3
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="d-inline-flex flex-row p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco">
+            div 3
+        </div>
+
+    </div>
+    
+    <div class="d-inline-flex flex-row-reverse p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco">
+            div 3
+        </div>
+
+    </div>
+    
+    <hr>
+
+    <div class="d-flex flex-row bg-primary">
+        <div class="d-flex flex-column p-3 bg-warning coluna">
+            <div class="bg-success p-3"> Div 1</div>
+            <div class="bg-primary p-3"> Div 1</div>
+            <div class="bg-danger p-3"> Div 1</div>
+        </div>
+
+        <div class="bg-light p1">11</div>
+
+        <div class="d-flex flex-column-reverse p-3 bg-warning coluna">
+            <div class="bg-success p-3"> Div 1</div>
+            <div class="bg-primary p-3"> Div 1</div>
+            <div class="bg-danger p-3"> Div 1</div>
+        </div>
+    </div>
+
+    <hr>
+    <h3>Justificando Conteúdo</h3>
+
+    <div class="d-flex justify-content-start p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco">
+            div 3
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="d-flex justify-content-end p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco">
+            div 3
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="d-flex justify-content-center p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco">
+            div 3
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="d-flex justify-content-between p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco">
+            div 3
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="d-flex justify-content-around p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco">
+            div 3
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="d-flex p-3 bg-secondary">
+        <div class="bg-primary p-3 bloco flex-fill">
+            div 1
+        </div>
+
+        <div class="bg-success p-3 bloco flex-fill">
+            div 2
+        </div>
+        <div class="bg-danger p-3 bloco flex-fill">
+            div 3
+        </div>
+
+    </div>
+
+</body>
+
+</html>

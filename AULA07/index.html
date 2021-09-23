@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming de midia</title>
+</head>
+<body>
+
+    <h1>Streaming</h1>
+    <h3>audio</h3>
+    <div>
+        <audio id="musica" autoplay="autoplay" controls="controls">
+            <source src="./Queen-BohemianRhapsody.mp3" type="audio/mp3" />
+            Audio não suportado pela versão atual do seu navegador. Atualize para ouvir.
+        </audio>
+        <div>
+            <button onclick="play()">play</button>
+            <button onclick="pause()">pause</button>
+            <button onclick="volume(+0.1)">+VOL</button>
+            <button onclick="volume(-0.1)">-VOL</button>
+        </div>
+    </div>
+    
+    <h3>Video</h3>
+    <div>
+        <video id="video" width="400" height="400">
+            <source src="./Timão e Pumba Final - Márcia Cristina(1).mp4" type="video/mp4">
+        </video>
+        <div>
+            <button onclick="playPause()">>||</button>
+            <button onclick="volumeVideo(+0.1)">+VOL</button>
+            <button onclick="volumeVideo(-0.1)">-VOL</button>
+            <button onclick="videoGrande()">GRANDE</button>
+            <button onclick="videoMedio()">Medio</button>
+            <button onclick="videoPequeno()">pequeno</button>
+        </div>
+    </div>
+    
+</body>
+<script>
+    var musica = document.getElementById("musica");
+    var video = document.getElementById("video");
+
+    function play(){
+        musica.play();
+    }
+
+    function pause(){
+        musica.pause();
+    }
+
+    function volume(valor){
+        musica.volume += valor;
+    }
+
+    //////////////////////////////VIDEO
+
+    function playPause(){
+        if(video.paused){
+            video.play();
+        }else{
+            video.pause()
+        }
+    }
+
+    function volumeVideo(valor){
+        video.volume += valor;
+    }
+
+    function videoGrande(){
+        video.width = 800;
+    }
+
+    function videoMedio(){
+        video.width = 500;
+    }
+
+    function videoPequeno(){
+        video.width = 250;
+    }
+
+    ///////////////////////////////////////////autoplay
+    // setInterval(()=>{
+    //     play();
+    //     playPause();
+    // } , 3000);
+
+   /*
+   coloque mais 1<video> e 1 <audio> em sua página, com controls e, pelo menos, 2 sources cada;
+   mandar o print no chat
+   */
+
+    console.log(()=>2+2)
+</script>
+
+</html>

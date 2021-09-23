@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout BS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .vermelho {
+            background-color: red;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
+        .verde {
+            background-color: green;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .bloco {
+            height: 50px;
+        }
+
+        .bloco2 {
+            height: 400px;
+        }
+        header, footer{
+            width: 100% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class=" bloco amarelo">
+
+        </header>
+        
+        <section>
+            <div class="row">
+
+                <div class="col-md bloco vermelho"></div>
+                <div class="col-md bloco azul"></div>
+                <div class="col-md bloco verde"></div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md bloco verde"></div>
+                <div class="col-md bloco vermelho"></div>
+                <div class="col-md bloco azul"></div>
+
+            </div>
+        </section>
+
+        <footer class="bloco amarelo"></footer>
+    </div>
+
+</body>
+
+</html>

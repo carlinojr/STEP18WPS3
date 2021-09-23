@@ -1,0 +1,42 @@
+.estilo{
+    background: black;
+    font: sans-serif;
+}
+
+.estilo2{
+
+    background-color: black;
+    font: sans-serif 18pt;
+}
+
+.circulo{
+    cx: 50px;
+    cy: 50px;
+    r: 40px; 
+    stroke: red; 
+    stroke-width: 4px; 
+    fill: blue;
+}
+
+.ellipse{
+    cx:200px;
+    cy:80px;
+    rx:100px; 
+    ry:40px;
+    stroke:red; 
+    stroke-width:4; 
+    fill:blue;
+}
+
+.text1{
+    x:0px; 
+    y:15px; 
+    fill:red;
+}
+
+.text2{
+    x:0px; 
+    y:15px; 
+    fill:blue; 
+    transform:rotate(30 20,40);
+}

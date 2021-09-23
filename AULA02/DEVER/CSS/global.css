@@ -1,0 +1,21 @@
+h1, h3 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.jumbotron{
+    background-color: rgb(31, 63, 134) !important;
+    margin-top: 5px;
+}
+
+form{
+    color: white;
+}
+
+.formCadastro{
+    width: 50%;
+}
+
+label{
+    text-align: right;
+}

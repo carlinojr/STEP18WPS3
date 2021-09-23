@@ -1,0 +1,13 @@
+$cor-padrao: black;
+$fonte: sans-serif;
+
+.estilo{
+    background: $cor-padrao;
+    font: $fonte;
+}
+
+.estilo2{
+
+    background-color: $cor-padrao;
+    font: $fonte 18pt;
+}
