@@ -1,0 +1,43 @@
+/*
+por hora estimada
+100h -> 120h x valor/h -> R$ 2.760,00
+
+4000/mês 
+22 dias uteis
+8h/dia
+
+4000/22/8
+|||-> não cobrar o valor total adiantado.
+
+stackoverflow jobs
+*/
+@import url(./pq.css)(max-width: 480px);
+
+@import url(./md.css)(max-width: 768px);
+
+@import url(./gd.css)(min-width: 769px);
+
+@media screen and (max-width: 300px){
+    #main{
+        background-color: aquamarine;
+    }
+    .class{
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 400px) and (orientation: landscape){
+    #main{
+        width: 80%;
+        max-width: 800px;
+        min-width: 500px;
+    }
+}
+
+@media screen and (min-width: 400px) and (orientation: portrait){
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 900px){
+
+}
