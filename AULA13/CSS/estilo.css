@@ -1,0 +1,134 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: turquoise;
+    position: relative;
+}
+.anima{
+    /*animações*/
+    animation: animaDiv 10s;
+    -moz-animation: animaDiv 10s;/*mozilla*/
+    -webkit-animation: animaDiv 10s;/*safari chrome*/
+    -o-animation: animaDiv 10s;/*opera*/
+}
+
+@keyframes animaDiv {
+    0%{background-color: green; left: 0; top:0;}
+    50%{background-color: yellow; left: 250px; top:250px; opacity: 0.5;}
+    75%{background-color: blue; left: 0; top:250px;transform: scale(1.5);}
+    100%{background-color: green;left: 0;top:0; transform: scale(1);opacity: 1;}
+}
+
+
+@-moz-keyframes animaDiv {/*forçar no firefox*/
+    0%{background-color: green; left: 0; top:0;}
+    50%{background-color: yellow; left: 250px; top:250px; opacity: 0.5;}
+    75%{background-color: blue; left: 0; top:250px;transform: scale(1.5);}
+    100%{background-color: green;left: 0;top:0; transform: scale(1);opacity: 1;}
+}
+
+
+@-webkit-keyframes animaDiv { /*SAFARI e Chrome*/
+    0%{background-color: green; left: 0; top:0;}
+    50%{background-color: yellow; left: 250px; top:250px; opacity: 0.5;}
+    75%{background-color: blue; left: 0; top:250px;transform: scale(1.5);}
+    100%{background-color: green;left: 0;top:0; transform: scale(1);opacity: 1;}
+}
+
+
+@-o-keyframes animaDiv {/*OPERA*/
+    0%{background-color: green; left: 0; top:0;}
+    50%{background-color: yellow; left: 250px; top:250px; opacity: 0.5;}
+    75%{background-color: blue; left: 0; top:250px;transform: scale(1.5);}
+    100%{background-color: green;left: 0;top:0; transform: scale(1);opacity: 1;}
+}
+
+@-moz-keyframes animaDiv2{
+    from{/*0%*/
+
+    }
+    to{/*100%*/
+
+    }
+}
+@-webkit-keyframes animaDiv3{
+    to{/*defina o estado final do objeto*/
+
+    }
+}
+/*
+Crie uma div com uma imagem qualquer. cada vez que clicar na div a imagem será trocada
+dica: use if e/ou um array para armazenar o caminho das fotos
+*/
+
+#galeria{
+    width: 200px;
+}
+.some{
+    display: none;
+    opacity: 0;
+}
+
+.mostrafoto{
+    -moz-animation: mostraFoto 0.5s;
+    -o-animation: mostraFoto 0.5s;
+    -webkit-animation: mostraFoto 0.5s;
+    animation: mostraFoto 0.5s;
+}
+
+.escondefoto{
+    -moz-animation: escondeFoto 0.5s;
+    -o-animation: escondeFoto 0.5s;
+    -webkit-animation: escondeFoto 0.5s;
+    animation: escondeFoto 0.5s;
+}
+
+@-moz-keyframes mostraFoto{
+    to{
+        display: block;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes mostraFoto{
+    to{
+        display: block;
+        opacity: 1;
+    }
+}
+@-o-keyframes mostraFoto{
+    to{
+        display: block;
+        opacity: 1;
+    }
+}
+@keyframes mostraFoto{
+    to{
+        display: block;
+        opacity: 1;
+    }
+}
+/*######################*/
+@-moz-keyframes escondeFoto{
+    to{
+        display: none;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes escondeFoto{
+    to{
+        display: none;
+        opacity: 0;
+    }
+}
+@-o-keyframes escondeFoto{
+    to{
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes escondeFoto{
+    to{
+        display: none;
+        opacity: 0;
+    }
+}
